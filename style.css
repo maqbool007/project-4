@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #0a0a0a, #3a4452);
+}
+
+.head {
+    color: white;
+}
+
+.calculator {
+    border: 2px solid #7d7d7d;
+    padding: 20px;
+    border-radius: 16px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.5);
+}
+
+input {
+    width: 320px;
+    border: none;
+    padding: 20px;
+    margin: 10px;
+    background-color: transparent;
+    box-shadow: 0px 5px 15px rgba(84, 84, 84, 0.9);
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+    color: white;
+    outline: none;
+}
+
+input::placeholder {
+    color: white;
+}
+
+button {
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    font-size: 22px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.equal-btn {
+    background-color: orange;
+}
+
+.operator {
+    color: #6dee0a;
+
+
+}
+
+button:active {
+    background-color: #6dee0a;
+    color: white;
+}
+
+.card {
+    background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+    border-radius: 20px;
+    transition: all .3s;
+}
+
+.card2 {
+
+    border-radius: 20px;
+    transition: all .3s;
+}
+
+.card2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+}
+
+.book {
+    position: relative;
+    border-radius: 20px;
+    background-color: rgb(55, 55, 55);
+    box-shadow: 1px 1px 12px #000;
+    transform: preserve-3d;
+    perspective: 2000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+}
+
+.cover {
+    top: 0;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+    transform-origin: 0;
+    box-shadow: 1px 1px 12px #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.book:hover .cover {
+    transition: all 0.5s;
+    transform: rotatey(-80deg);
+}
+
+p {
+    font-size: 20px;
+    font-weight: bolder;
+}
